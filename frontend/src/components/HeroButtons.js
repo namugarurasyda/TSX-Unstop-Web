@@ -27,7 +27,7 @@ const HeroButtons = () => {
           variant='contained'
           size='large'
           color='primary'
-          href='#'
+          href='myresume'
           startIcon={<InfoIcon />}
           fullWidth={isMd ? false : true}
           disableElevation={true}
@@ -41,7 +41,7 @@ const HeroButtons = () => {
             },
           }}
         >
-          Get Started
+          Resume
         </Button>
         <Box
           marginTop={{ xs: 2, sm: 0 }}
@@ -53,7 +53,7 @@ const HeroButtons = () => {
             variant='outlined'
             color='primary'
             size='large'
-            href='#'
+            href='Projects'
             startIcon={<PlayIcon />}
             fullWidth={isMd ? false : true}
             disableElevation={true}
@@ -67,7 +67,7 @@ const HeroButtons = () => {
               },
             }}
           >
-            Watch Demo
+            Sample projects
           </Button>
         </Box>
       </Box>

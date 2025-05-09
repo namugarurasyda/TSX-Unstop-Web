@@ -95,7 +95,7 @@ const Contact = () => {
                     >
                       <Box
                         component={LazyLoadImage}
-                        src='/images/office.jpg'
+                        src='/images/office.jpeg'
                         alt='Laptop'
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}

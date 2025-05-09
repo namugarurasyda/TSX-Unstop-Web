@@ -1,3 +1,6 @@
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from 'react';
 import AOS from 'aos';
 import PropTypes from 'prop-types';
@@ -12,10 +15,13 @@ import theme from '../theme/theme';
 import createEmotionCache from '../utils/createEmotionCache';
 import Layout from '../layout/Layout';
 
+
+
 // Client-side cache, shared for the whole session of the user in the browser
 const clientSideEmotionCache = createEmotionCache();
 
 const App = ({
+ 
   Component,
   pageProps,
   emotionCache = clientSideEmotionCache,
@@ -38,6 +44,7 @@ const App = ({
 
   return (
     <CacheProvider value={emotionCache}>
+ 
       <Head>
         <meta charSet='utf-8' />
         <meta
@@ -51,12 +58,15 @@ const App = ({
         />
         <title>Namugarura &apos Syda;</title>
       </Head>
+
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Layout>
           <Component {...pageProps} />
         </Layout>
+        
       </ThemeProvider>
+       
     </CacheProvider>
   );
 };

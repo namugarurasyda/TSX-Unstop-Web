@@ -24,6 +24,8 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <p>More about the button <button onclick="location.href='dummy.pdf'">Example Report</button></p>
+          <p>More infor: <button onclick = "window,open"></button></p>
         </body>
       </Html>
     );
